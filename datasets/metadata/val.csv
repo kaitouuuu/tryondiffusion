@@ -1,0 +1,5 @@
+# Example validation metadata file for TryOnDiffusion
+
+person_image,ca_image,garment_image,person_pose,garment_pose
+images/person/val_001.jpg,images/ca_images/val_ca_001.jpg,images/garment/val_garment_001.jpg,poses/person_poses/val_pose_001.json,poses/garment_poses/val_garment_pose_001.json
+images/person/val_002.jpg,images/ca_images/val_ca_002.jpg,images/garment/val_garment_002.jpg,poses/person_poses/val_pose_002.json,poses/garment_poses/val_garment_pose_002.json

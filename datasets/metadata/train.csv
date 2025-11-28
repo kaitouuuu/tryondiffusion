@@ -1,0 +1,26 @@
+# Example metadata files for TryOnDiffusion training
+
+# This file shows the expected format for your training and validation CSV files
+# Copy this format and replace with your actual data paths
+
+person_image,ca_image,garment_image,person_pose,garment_pose
+images/person/person_001.jpg,images/ca_images/ca_001.jpg,images/garment/garment_001.jpg,poses/person_poses/pose_001.json,poses/garment_poses/garment_pose_001.json
+images/person/person_002.jpg,images/ca_images/ca_002.jpg,images/garment/garment_002.jpg,poses/person_poses/pose_002.json,poses/garment_poses/garment_pose_002.json
+images/person/person_003.jpg,images/ca_images/ca_003.jpg,images/garment/garment_003.jpg,poses/person_poses/pose_003.json,poses/garment_poses/garment_pose_003.json
+
+# Notes:
+# - All paths are relative to the dataset_root directory
+# - person_image: Original person image with clothing
+# - ca_image: Clothing-agnostic person image (clothing area masked/removed)
+# - garment_image: Target garment to be worn
+# - person_pose: JSON file with person pose keypoints  
+# - garment_pose: JSON file with garment pose keypoints
+#
+# Pose JSON format example:
+# {
+#   "keypoints": [x1, y1, c1, x2, y2, c2, ...] // 18 keypoints * 3 values each (x, y, confidence)
+# }
+# OR
+# {
+#   "pose_keypoints_2d": [x1, y1, c1, x2, y2, c2, ...] // OpenPose format
+# }
